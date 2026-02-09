@@ -4,7 +4,7 @@
 
 ---
 
-## 1️⃣ Payroll System
+## 1. Payroll System
 
 ### **Function Code**
 
@@ -38,7 +38,7 @@ console.log(calculateSalary(20000, 10));
 
 ---
 
-## 2️⃣ Student Result System
+## 2️. Student Result System
 
 ### **Function Code**
 
@@ -79,7 +79,7 @@ console.log(generateResult("Harish", [70, 80, 75]));
 
 ---
 
-## 3️⃣ Debug This Code
+## 3️. Debug This Code
 
 ### **Given Code**
 
@@ -95,12 +95,12 @@ function demo() {
 }
 ```
 
-### ❓ What will happen?
+###  What will happen?
 
 * `a` prints **10**
 * `b` throws **ReferenceError**
 
-### ❓ Why?
+###  Why?
 
 * `var` is **function scoped**
 * `let` is **block scoped**
@@ -121,7 +121,7 @@ function demo() {
 
 ---
 
-## 4️⃣ Hoisting Analysis
+## 4️. Hoisting Analysis
 
 ### **Code**
 
@@ -133,14 +133,14 @@ console.log(y);
 let y = 200;
 ```
 
-### 🔍 Output
+###  Output
 
 ```
 undefined
 ReferenceError
 ```
 
-### 📘 Explanation
+###  Explanation
 
 * `var x` is hoisted → initialized as `undefined`
 * `let y` is hoisted but **not initialized** → Temporal Dead Zone
@@ -151,7 +151,7 @@ ReferenceError
 
 ---
 
-## 5️⃣ Order Processing System
+## 5️. Order Processing System
 
 ### **Function Code**
 
@@ -174,7 +174,7 @@ processOrder(101, generateInvoice);
 
 ---
 
-## 6️⃣ Bank Transaction System
+## 6️. Bank Transaction System
 
 ### **Function Code**
 
@@ -208,7 +208,7 @@ transaction(500, "deposit", sendSMS);
 
 ---
 
-## 7️⃣ Dynamic Price Builder
+## 7️. Dynamic Price Builder
 
 ### **Function Code**
 
@@ -241,7 +241,7 @@ console.log(priceBuilder(2000)(15)(18));
 
 #  SECTION 5 – IIFE (Security + Encapsulation)
 
-## 8️⃣ Secure Company Module
+## 8️. Secure Company Module
 
 ### **Requirement**
 
@@ -283,7 +283,7 @@ console.log(CompanyModule.getCompanyStatus());
 
 ---
 
-## 9️⃣ Unique Order ID Generator
+## 9️. Unique Order ID Generator
 
 ### **Requirement**
 
@@ -320,7 +320,7 @@ ORD1003
 
 ---
 
-## 🔟 Coupon Spin System
+## 10. Coupon Spin System
 
 ### **Requirement**
 
@@ -365,11 +365,11 @@ console.log(spin.next().value);
 
 #  SECTION 7 – Mini Project (Integrated)
 
-## 🛒 Mini E-Commerce Flow
+##  Mini E-Commerce Flow
 
 ---
 
-### 1️⃣ addToCart(product, price)
+### 1️. addToCart(product, price)
 
 ```js
 let cart = [];
@@ -381,7 +381,7 @@ function addToCart(product, price) {
 
 ---
 
-### 2️⃣ calculateTotal()
+### 2️. calculateTotal()
 
 ```js
 function calculateTotal() {
@@ -391,7 +391,7 @@ function calculateTotal() {
 
 ---
 
-### 3️⃣ applyDiscount() – Using Currying
+### 3️. applyDiscount() – Using Currying
 
 ```js
 function applyDiscount(discount) {
@@ -403,7 +403,7 @@ function applyDiscount(discount) {
 
 ---
 
-### 4️⃣ generateCoupon() – Using Generator
+### 4️. generateCoupon() – Using Generator
 
 ```js
 function* generateCoupon() {
@@ -415,7 +415,7 @@ function* generateCoupon() {
 
 ---
 
-### 5️⃣ processPayment() – Using Callback
+### 5️. processPayment() – Using Callback
 
 ```js
 function processPayment(amount, callback) {
@@ -430,7 +430,7 @@ function paymentSuccess() {
 
 ---
 
-### 6️⃣ Hide Config Using IIFE
+### 6️. Hide Config Using IIFE
 
 ```js
 const config = (function () {
@@ -447,7 +447,7 @@ const config = (function () {
 
 ---
 
-## 1️⃣ Difference between Function Declaration & Expression
+## 1️. Difference between Function Declaration & Expression
 
 | Function Declaration            | Function Expression                |
 | ------------------------------- | ---------------------------------- |
@@ -461,7 +461,7 @@ const demo = function() {}; // Expression
 
 ---
 
-## 2️⃣ What is Higher Order Function?
+## 2️. What is Higher Order Function?
 
 A function that:
 
@@ -478,7 +478,7 @@ function higherOrder(fn) {
 
 ---
 
-## 3️⃣ Real-Time Example of Generator
+## 3️. Real-Time Example of Generator
 
 ✔ Pagination
 ✔ Order ID generation
@@ -487,7 +487,7 @@ function higherOrder(fn) {
 
 ---
 
-## 4️⃣ Why do we use IIFE?
+## 4️. Why do we use IIFE?
 
 * Avoid global scope pollution
 * Data privacy
@@ -496,13 +496,13 @@ function higherOrder(fn) {
 
 ---
 
-## 5️⃣ Difference between `var`, `let`, `const`
+## 5️. Difference between `var`, `let`, `const`
 
 | Feature  | var      | let   | const |
 | -------- | -------- | ----- | ----- |
 | Scope    | Function | Block | Block |
 | Hoisting | Yes      | TDZ   | TDZ   |
-| Reassign | Yes      | Yes   | ❌ No  |
+| Reassign | Yes      | Yes   | ❌ No |
 
 ---
 
