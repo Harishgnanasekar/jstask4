@@ -502,7 +502,7 @@ function higherOrder(fn) {
 | -------- | -------- | ----- | ----- |
 | Scope    | Function | Block | Block |
 | Hoisting | Yes      | TDZ   | TDZ   |
-| Reassign | Yes      | Yes   | ❌ No |
+| Reassign | Yes      | Yes   |  No   |
 
 ---
 
